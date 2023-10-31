@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
-:root {
-    --blue: #75a3be;
-    --brown: #DB983D;
-}
+/* Fonte poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* Configuração dos ícones */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -13,45 +12,60 @@
   'opsz' 24
 }
 
+:root {
+    --blue: #75a3be;
+    --brown: #DB983D;
+}
+
+
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
     height: 100vh;
+    width: 100vw;
 }
 
 body {
+    position: relative;
     background-color: var(--blue);
-}
-
-main {
-    width: 250px;
-    margin: 50px auto 0px auto;
 }
 
 #building {
     background-image: url(../img/building-phone.jpg);
     width: 250px;
     height: 200px;
-    border-radius: 20px 20px 0px 0px;
+}
+
+main {
+    position: relative;
 }
 
 #login {
-    padding: 0px 10px 15px 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    width: 250px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
 }
 
-#login h1 {
-    padding: 15px;
+#loginArea {
+    padding: 10px;
+}
+
+#loginArea h1 {
+    padding-bottom: 10px;
     text-align: center;
 }
 
-#login p {
+#loginArea p {
     font-size: .9em;
 }
 
@@ -59,15 +73,15 @@ main {
     display: inline-block;
     background-color: var(--brown);
     padding: 1px;
-    margin-bottom: 5px;
+    margin-top: 5px;
     width: 100%;
     border-radius: 11px;
 }
 
 .inputText span {
+    display: inline-block;
     font-size: 2em;
     color: white;
-    margin-top: 15px;
 }
 
 .inputText input {
@@ -81,6 +95,7 @@ main {
     height: 40px;
     border-radius: 5px;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #submit input {
