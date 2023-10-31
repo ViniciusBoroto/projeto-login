@@ -36,12 +36,6 @@ body {
     background-color: var(--blue);
 }
 
-#building {
-    background-image: url(../img/building-phone.jpg);
-    width: 250px;
-    height: 200px;
-}
-
 main {
     position: relative;
     height: 100vh;
@@ -53,11 +47,21 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     height: fit-content;
     width: 250px;
+    border-radius: 20px;
+
     background-color: white;
-    border-radius: 0px 0px 20px 20px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.445);
+    overflow: hidden;
 }
+
+#building {
+    background-image: url(../img/building-phone.jpg);
+    height: 200px;
+}
+
 
 #loginArea {
     padding: 10px;
