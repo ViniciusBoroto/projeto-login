@@ -56,6 +56,9 @@ main {
     background-color: white;
     box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.445);
     overflow: hidden;
+
+    transition: width .25s, height .25s;
+    transition-timing-function: ease;
 }
 
 #building {
@@ -89,14 +92,19 @@ main {
 }
 
 .inputText span {
+    float: left;
+    margin-left: 5px;
+    width: 15%;
     display: inline-block;
     font-size: 2em;
     color: white;
 }
 
 .inputText input {
-    width: 150px;
-    height: 30px;
+    float: right;
+    margin-right: 1px;
+    width: 82%;
+    height: 100%;
     border-radius: 10px;
 }
 
