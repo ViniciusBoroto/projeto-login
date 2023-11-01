@@ -47,6 +47,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
 
     height: fit-content;
     width: 250px;
@@ -59,7 +60,9 @@ main {
 
 #building {
     background-image: url(../img/building-phone.jpg);
+    display: block;
     height: 200px;
+    background-repeat: no-repeat;
 }
 
 
