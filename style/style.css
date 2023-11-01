@@ -85,25 +85,26 @@ main {
 .inputText {
     display: inline-block;
     background-color: var(--brown);
-    padding: 1px;
+    padding: 3px;
     margin-top: 5px;
     width: 100%;
+    height: 35px;
     border-radius: 11px;
 }
 
 .inputText span {
+    display: block;
     float: left;
     margin-left: 5px;
     width: 15%;
-    display: inline-block;
+    height: 100%;
     font-size: 2em;
     color: white;
 }
 
 .inputText input {
     float: right;
-    margin-right: 1px;
-    width: 82%;
+    width: 80%;
     height: 100%;
     border-radius: 10px;
 }
