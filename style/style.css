@@ -62,7 +62,11 @@ main {
 }
 
 #building {
-    background-image: url(../img/building-phone.jpg);
+    /* background-image: url(../img/building-phone.jpg); */
+    background-image: url(../img/susain.jpeg);
+    background-size: cover;
+    background-position: center center;
+
     display: block;
     height: 200px;
     background-repeat: no-repeat;
