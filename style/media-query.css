@@ -9,7 +9,7 @@
     
     #login {
         width: 90vw;
-        height: 312px;
+        height: 350px;
     }
 
     #building {
@@ -26,6 +26,13 @@
         width: 65%;
     }
 
+    .inputText {
+        height: 50px;
+    } 
+
+    .inputText span {
+        margin-top: 6px;
+    }
 }
 
 /* Telas Grandes */
@@ -36,7 +43,7 @@
     
     #login {
         width: 900px;
-        height: 312px;
+        height: 430px;
     }
 
     #building {
@@ -51,5 +58,14 @@
     #loginArea {
         float: left;
         width: 50%;
+        padding: 40px;
+    }
+
+    .inputText {
+        height: 50px;
+    } 
+
+    .inputText span {
+        margin-top: 6px;
     }
 }
