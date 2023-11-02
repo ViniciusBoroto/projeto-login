@@ -119,16 +119,22 @@ main {
     cursor: pointer;
 }
 
-#submit input {
-    background-color: var(--brown);
+#submit input[type=submit] {
+    background-color: var(--blue);
     color: white;
     font-size: 1em;
+    border: none;
+
+    transition: 0.1s;
+}
+
+#submit input[type=submit]:hover {
+    background-color: #678fa7;
 }
 
 #forgot {
     display: block;
-    background-color: whitesmoke;
-    border: 1px solid black;
+    border: 2px var(--blue) solid;
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -138,4 +144,15 @@ main {
     text-align: center;
     text-decoration: none;
     color: black;
+    padding-top: 8px;
+
+    transition: .1s;
+}
+
+#forgot:hover {
+    background-color: #dbf3ff;
+}
+
+#forgot span {
+    font-size: .8em;
 }
